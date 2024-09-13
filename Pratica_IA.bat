@@ -23,7 +23,7 @@ if "%estado%"=="2" goto apagada
 if "%estado%"=="3" goto apagada
 if "%estado%"=="4" goto acesa
 if "%estado%"=="5" goto pico
-if "%estado%"=="6" goto acesa
+if "%estado%"=="6" goto intensidadealta
 if "%estado%"=="7" goto pico
 if "%estado%"=="8" goto fim
 
@@ -33,68 +33,286 @@ goto inicio
 
 :pico
 cls
-color 4
 echo Luz provisoriamente desligada ou com baixa intensidade
-echo                   _____________
-echo		      /             \
-echo		     /               \
-echo                /	              \
-echo		   |       _____       |
-echo               |	  /     \      |
-echo		   |     |       |     |
-echo                \     \     /     /
-echo                 \     |   |     /
-echo                  \    |   |    /
-echo                   |===========|
-echo                   |===========|
-echo                   |===========|
-echo                   |===========|
-echo		       |===========|
-pause >null
-goto inicio
+timeout 2 >null
+goto intensidadebaixa
 
 :acesa
 cls
-color 2
-echo Esta Acesa
-echo                   _____________
-echo		      /             \
-echo		     /               \
-echo                /	              \
-echo		   |       _____       |
-echo               |	  /     \      |
-echo		   |     |       |     |
-echo                \     \     /     /
-echo                 \     |   |     /
-echo                  \    |   |    /
-echo                   |===========|
-echo                   |===========|
-echo                   |===========|
-echo                   |===========|
-echo		       |===========|
-pause >null
-goto inicio
+echo Acendendo lampada
+timeout 2 >null
+goto LampAcesa
 
 :apagada
 cls
-color 4
-echo Esta Apagada
-echo                   _____________
-echo		      /             \
-echo		     /               \
-echo                /	              \
-echo		   |       _____       |
-echo               |	  /     \      |
-echo		   |     |       |     |
-echo                \     \     /     /
-echo                 \     |   |     /
-echo                  \    |   |    /
-echo                   |===========|
-echo                   |===========|
-echo                   |===========|
-echo                   |===========|
-echo		       |===========|
-pause >null
+echo Apagando Lampada
+timeout 2 >null
+goto LampApagada
+
+:lampAcesa
+cls
+
+color 8
+
+echo                   ============= 
+echo                  =             = 
+echo                 =               = 
+echo                =                 = 
+echo               =       =====       = 
+echo               =      =     =      = 
+echo               =     =       =     = 
+echo                =     =     =     = 
+echo                 =     =   =     = 
+echo                  =    =   =    = 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+
+timeout 1 >null
+
+cls
+color 6
+
+echo                   ============= 
+echo                  =             = 
+echo                 =               = 
+echo                =                 = 
+echo               =       =====       = 
+echo               =      =     =      = 
+echo               =     =       =     = 
+echo                =     =     =     = 
+echo                 =     =   =     = 
+echo                  =    =   =    = 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+
+timeout 2 >null
+goto inicio
+
+:LampApagada
+cls
+
+color 6
+
+echo                   ============= 
+echo                  =             = 
+echo                 =               = 
+echo                =                 = 
+echo               =       =====       = 
+echo               =      =     =      = 
+echo               =     =       =     = 
+echo                =     =     =     = 
+echo                 =     =   =     = 
+echo                  =    =   =    = 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+
+timeout 1 >null
+
+cls
+color 8
+
+echo                   ============= 
+echo                  =             = 
+echo                 =               = 
+echo                =                 = 
+echo               =       =====       = 
+echo               =      =     =      = 
+echo               =     =       =     = 
+echo                =     =     =     = 
+echo                 =     =   =     = 
+echo                  =    =   =    = 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+
+timeout 2 >null
+goto inicio
+
+:intensidadebaixa
+cls
+color 6
+
+echo                   ============= 
+echo                  =             = 
+echo                 =               = 
+echo                =                 = 
+echo               =       =====       = 
+echo               =      =     =      = 
+echo               =     =       =     = 
+echo                =     =     =     = 
+echo                 =     =   =     = 
+echo                  =    =   =    = 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+
+timeout 1 >null
+
+cls
+color e
+
+echo                   ============= 
+echo                  =             = 
+echo                 =               = 
+echo                =                 = 
+echo               =       =====       = 
+echo               =      =     =      = 
+echo               =     =       =     = 
+echo                =     =     =     = 
+echo                 =     =   =     = 
+echo                  =    =   =    = 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+
+timeout 1 >null
+
+cls
+color f
+
+echo                   ============= 
+echo                  =             = 
+echo                 =               = 
+echo                =                 = 
+echo               =       =====       = 
+echo               =      =     =      = 
+echo               =     =       =     = 
+echo                =     =     =     = 
+echo                 =     =   =     = 
+echo                  =    =   =    = 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+
+timeout 1 >null
+
+cls
+color 8
+
+echo                   ============= 
+echo                  =             = 
+echo                 =               = 
+echo                =                 = 
+echo               =       =====       = 
+echo               =      =     =      = 
+echo               =     =       =     = 
+echo                =     =     =     = 
+echo                 =     =   =     = 
+echo                  =    =   =    = 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+
+timeout 2 >null
+goto inicio
+
+:intensidadealta
+cls
+echo Aumento de Intensidade
+timeout 2 >null
+
+cls
+color 8
+
+echo                   ============= 
+echo                  =             = 
+echo                 =               = 
+echo                =                 = 
+echo               =       =====       = 
+echo               =      =     =      = 
+echo               =     =       =     = 
+echo                =     =     =     = 
+echo                 =     =   =     = 
+echo                  =    =   =    = 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+
+timeout 1 >null
+
+cls
+color f
+
+echo                   ============= 
+echo                  =             = 
+echo                 =               = 
+echo                =                 = 
+echo               =       =====       = 
+echo               =      =     =      = 
+echo               =     =       =     = 
+echo                =     =     =     = 
+echo                 =     =   =     = 
+echo                  =    =   =    = 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+
+timeout 1 >null
+
+cls
+color e
+
+echo                   ============= 
+echo                  =             = 
+echo                 =               = 
+echo                =                 = 
+echo               =       =====       = 
+echo               =      =     =      = 
+echo               =     =       =     = 
+echo                =     =     =     = 
+echo                 =     =   =     = 
+echo                  =    =   =    = 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+
+timeout 1 >null
+
+cls
+color 6
+
+echo                   ============= 
+echo                  =             = 
+echo                 =               = 
+echo                =                 = 
+echo               =       =====       = 
+echo               =      =     =      = 
+echo               =     =       =     = 
+echo                =     =     =     = 
+echo                 =     =   =     = 
+echo                  =    =   =    = 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+echo                   ============= 
+
+timeout 2 >null
 goto inicio
 
 :fim
