@@ -35,20 +35,65 @@ goto inicio
 cls
 color 4
 echo Luz provisoriamente desligada ou com baixa intensidade
+echo                   _____________
+echo		      /             \
+echo		     /               \
+echo                /	              \
+echo		   |       _____       |
+echo               |	  /     \      |
+echo		   |     |       |     |
+echo                \     \     /     /
+echo                 \     |   |     /
+echo                  \    |   |    /
+echo                   |===========|
+echo                   |===========|
+echo                   |===========|
+echo                   |===========|
+echo		       |===========|
 pause >null
-goto :inicio
+goto inicio
 
 :acesa
 cls
 color 2
 echo Esta Acesa
+echo                   _____________
+echo		      /             \
+echo		     /               \
+echo                /	              \
+echo		   |       _____       |
+echo               |	  /     \      |
+echo		   |     |       |     |
+echo                \     \     /     /
+echo                 \     |   |     /
+echo                  \    |   |    /
+echo                   |===========|
+echo                   |===========|
+echo                   |===========|
+echo                   |===========|
+echo		       |===========|
 pause >null
-goto :inicio
+goto inicio
 
 :apagada
 cls
 color 4
 echo Esta Apagada
+echo                   _____________
+echo		      /             \
+echo		     /               \
+echo                /	              \
+echo		   |       _____       |
+echo               |	  /     \      |
+echo		   |     |       |     |
+echo                \     \     /     /
+echo                 \     |   |     /
+echo                  \    |   |    /
+echo                   |===========|
+echo                   |===========|
+echo                   |===========|
+echo                   |===========|
+echo		       |===========|
 pause >null
 goto inicio
 
